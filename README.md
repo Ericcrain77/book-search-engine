@@ -31,6 +31,11 @@ This application utilizes the following:
 * React
 * Node
     * concurrently
+    * nodemon
+* GraphQL
+* Apollo Server
+* React Router
+* JSON Web Tokens
 
 ## Questions
 Reach out to me using my [Github account](https://github.com/Ericcrain77) or my [email](ericcrain77@gmail.com).
