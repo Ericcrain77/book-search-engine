@@ -1,5 +1,8 @@
 # Book Search Engine
 
+## Licensing
+[![License](https://img.shields.io/github/license/ericcrain77/book-search-engine?color=blueviolet)](https://choosealicense.com/licenses/unlicense/#)
+
 ## Table of Contents
 * [Description](#description)
 * [User Story](#user-story)
@@ -18,7 +21,7 @@ I WANT to search for new books to read
 
 SO THAT I can keep a list of books to purchase
 
-## Screenshot
+## Screenshots
 
 
 ![]()
