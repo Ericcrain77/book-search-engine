@@ -40,7 +40,7 @@ const resolvers = {
             if (context.user) {
                 const addBook = await User.findByIdAndUpdate(
                     { _id: context.user._id },
-                    { $pusht: { savedBooks: newBook } },
+                    { $push: { savedBooks: newBook } },
                     { new: true }
                 );
 

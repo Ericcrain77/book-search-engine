@@ -10,7 +10,7 @@ import { GET_ME } from '../utils/queries';
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
-  const [userData, setUserData] = useState(loading ? null : data?.me);
+  const userData = loading ? null : data?.me;
 
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
@@ -24,12 +24,6 @@ const SavedBooks = () => {
         variables: { bookId }
       });
 
-      setUserData(() => {
-        return {
-          ...userData,
-          savedBooks: data.data.removeBook.savedBooks
-        }
-      })
       removeBookId(bookId);
     } catch (err) {
       console.error(err);
