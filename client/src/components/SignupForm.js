@@ -24,9 +24,7 @@ function SignupForm(props) {
 
     const formResponse = await addUser({
       variables: { 
-        username: userFormData.username,
-        email: userFormData.email,
-        password: userFormData.password,
+        ...userFormData,
        },
     });
     const token = formResponse.data.addUser.token;
